@@ -1,0 +1,32 @@
+1. Did you attempt to make your computer player smarter than the baseline -- i.e., do something more clever than just pick a random/arbitrary legal move?
+    I do attempted to make the computer player smarter than just picking a random/arbitrary 
+    legal move. The minimax algorithm is a well-known algorithm used for finding the optimal 
+    move in two-player games. My minimax funciton takes a position argument,which is indeed 
+    a board object. And based on this current board, it finds the best board, which then allows the 
+    computer to move into.
+
+
+2. If so, were you able to accomplish this? Is your computer player as smart as you would like?
+    Yes, As I increase the depth of my minimax function, it takes more time to find the best step.
+    Depth = 1, easy mode 
+    Depth = 3, hard mode
+    Depth > 4, taking longer time to run the program
+
+
+3. How did you determine which piece to play next? Tell us about your “pick next move” algorithm
+    in the get_all_moves function, the code iterates over all possible moves for a given piece and 
+    simulates each move using the simulate_move function. This suggests that the algorithm is 
+    evaluating all possible moves and selecting the one with the highest score, as determined by 
+    the position.evaluate() method.
+
+
+4. How often did your computer program beat you, or your friends, or whoever tested it out for you?
+    As I increase the depth of the minimax algorithm, the computer becomes really smart and I only 
+    beat it a couple of times. But when I put the depth value =1, it becomes easier to win the game.
+    So, the difficulty can be modified.
+
+
+5. How would you improve it in the future?
+    Right now, the computer always trying to become a king again and again. In order to gain more points,
+    the computer always prioritize becoming king. I might have to adjust the evaluate function, so that the 
+    it could be more flexible.
